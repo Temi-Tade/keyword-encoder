@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mooli">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Online Keyword Encoder</title>
+</head>
+<body>
+    <div class="info">
+        <p><em>Plain text, Ciphered text and keyword should be alphabets only</em></p>
+    </div>
+
+    <form autocomplete="off" spellcheck="false">
+        <div class="field options">
+            <label for="encipher">
+                <input type="radio" name="option" id="encipher" value="encipher" checked onchange="SET_ENCIPHER_MODE(this.checked)">
+                Encipher
+            </label>
+            
+            <label for="decipher">
+                <input type="radio" name="option" id="decipher" value="decipher" onchange="SET_DECIPHER_MODE(this.checked)">
+                Decipher
+            </label>
+        </div>
+
+        <div class="field keyword">
+            <input type="text" id="keyword" placeholder="Keyword">&nbsp;
+            <button type="submit">Encipher</button>
+        </div>
+
+        <div class="field">
+            <textarea name="" id="input" rows="8" cols="40" placeholder="Plain text"></textarea>
+        </div>
+
+        <div class="field">
+            <textarea name="" id="output" rows="8" cols="40" placeholder="Ciphered text" readonly></textarea>
+        </div>
+    </form>
+
+    <script src="./js/index.js"></script>
+</body>
+</html>

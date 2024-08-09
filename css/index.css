@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .5s;
+    letter-spacing: .0625rem;
+    font-family: "Mooli", sans-serif;
+}
+
+*:focus{
+    outline: 0;
+}
+
+html{
+    background: #101010;
+    color: #FFF;
+    position: relative;
+    font-family: "Mooli", sans-serif;
+}
+
+::placeholder{
+    color: #C3C3C3;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    border-radius: .75rem;
+    padding: .5rem;
+    cursor: pointer;
+    background-color: #049c9c;
+    color: #FFF;
+    border: 0;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: #0b5e5e;
+}
+
+.field{
+    padding: .5rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: .75rem auto;
+}
+
+.field :is(input, textarea){
+    background-color: transparent;
+    resize: none;
+    padding: .75rem;
+    border-radius: .5rem;
+    border: 1.5px solid #FFF;
+    color: #FFF;
+}
+
+textarea{
+    width: 80%;
+    font-size: 1rem;
+}
+
+input[type=text]{
+    width: 15rem;
+    font-size: 1rem;
+}
+
+.keyword{
+    width: 50%;
+    font-size: 1.25rem;
+}
+
+input[type=radio]{
+    appearance: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: -2;
+    border: 0;
+    border-radius: .75rem .75rem 0 0;
+    box-shadow: inset 1px 1px 1px #cccccc5e;
+}
+
+label{
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    padding: 1em;
+}
+
+input[type=radio]:checked{
+    background: linear-gradient(#aaa7, #ccc7, #7777);
+}
+
+.info{
+    padding: 1rem;
+    text-align: center;
+}
